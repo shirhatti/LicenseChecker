@@ -18,11 +18,12 @@ namespace shirhatti.LicenseChecker
             };
             app.HelpOption("-h|--help");
 
+            var licenseTemplatePath = app.Argument("<TEMPLATE>", "The path to the License Header template");
             var projectPath = app.Argument("<PROJECT>", "The path to the projet (project folder or project.json");
-
+            
             app.OnExecute(() =>
             {
-                var exitCode = new LicenseChecker(projectPath.Value).Run();
+                var exitCode = new LicenseChecker(licenseTemplatePath.Value, projectPath.Value).Run();
                 return exitCode;
             });
 
