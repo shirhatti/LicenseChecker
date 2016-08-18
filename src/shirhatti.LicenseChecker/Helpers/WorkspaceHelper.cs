@@ -1,3 +1,6 @@
+// Copyright (c) Sourabh Shirhatti. All rights reserved.
+// Licensed under the MIT License. See LICENSE.md in the project root for license information.
+
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.DotNet.ProjectModel;
