@@ -4,7 +4,7 @@
     "isShellCommand": true,
     "args": [],
     "options": {
-        "cwd": "${workspaceRoot}/src/shirhatti.LicenseChecker/"
+        "cwd": "${workspaceRoot}/src/Shirhatti.StaticCodeAnalyzer/"
     },
     "tasks": [
         {

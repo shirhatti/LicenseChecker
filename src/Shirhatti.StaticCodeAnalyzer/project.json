@@ -3,7 +3,7 @@
   "buildOptions": {
     "debugType": "portable",
     "emitEntryPoint": true,
-    "outputName": "dotnet-check-license"
+    "outputName": "dotnet-analyze-code"
   },
   "dependencies": {
     "Microsoft.CodeAnalysis": "1.3.2",

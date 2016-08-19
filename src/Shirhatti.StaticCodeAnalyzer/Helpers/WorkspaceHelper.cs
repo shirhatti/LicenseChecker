@@ -6,7 +6,7 @@ using System.Linq;
 using Microsoft.DotNet.ProjectModel;
 using Microsoft.DotNet.ProjectModel.Workspaces;
 
-namespace shirhatti.LicenseChecker.Helpers
+namespace Shirhatti.CodeAnalyzer.Helpers
 {
     public class WorkspaceHelper
     {
