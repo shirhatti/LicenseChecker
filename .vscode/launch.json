@@ -7,7 +7,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceRoot}/src/Shirhatti.StaticCodeAnalyzer/bin/Debug/netcoreapp1.0/dotnet-analyze-code.dll",
-            "args": [ ],
+            "args": [ "/Users/shirhatti/src/tmp/" ],
             "cwd": "${workspaceRoot}",
             "stopAtEntry": false
         }

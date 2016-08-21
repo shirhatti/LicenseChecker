@@ -30,6 +30,7 @@ namespace Shirhatti.CodeAnalyzer
 
             var localDelegate = new RuleBuilder()
                                     .UseRule<LicenseCheckRule>("/Users/shirhatti/src/LicenseChecker/LICENSE.template")
+                                    .UseRule<LicenseCheckRule>("/Users/shirhatti/src/LicenseChecker/LICENSE.template")
                                     .Build();
 
             var solution = WorkspaceHelper.Create(_projectPath).FirstOrDefault().CurrentSolution;
@@ -43,7 +44,10 @@ namespace Shirhatti.CodeAnalyzer
                         response = response
                     };
                     await localDelegate.Invoke(ruleContext);
-                    Console.WriteLine(ruleContext.response.ToString());
+                    foreach (var comment in ruleContext.response)
+                    {
+                        Console.WriteLine(comment);
+                    }
                 }
             }
 

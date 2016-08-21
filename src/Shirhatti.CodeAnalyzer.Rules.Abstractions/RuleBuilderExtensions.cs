@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace Shirhatti.CodeAnalyzer {
+namespace Shirhatti.CodeAnalyzer.Rules.Abstractions {
     public static class RuleBuilderExtensions {
         private const string InvokeMethodName = "Invoke";
         public static IRuleBuilder UseRule<TRule>(this IRuleBuilder ruleBuilder, params object[] args)
